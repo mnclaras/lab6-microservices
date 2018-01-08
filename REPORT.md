@@ -41,6 +41,7 @@ The web service knows that there are two account microservices, since they are d
 This cause that the web service will be able to communicate with both of them, 
 depending on which one the Eureka registration services provide.
 
-If we kill the account service in the port 2222, the web service will continue using 
-this service **until Eureka update its list of available services**, and therefore realizes
-that the service is offline.
+If we kill the account service in the port 2222, the web service will try to reach it, but
+when he realizes that it's down, he will ask Eureka (the Registration Server) to get the
+new list of available services. So, on future petitions, the web service will only use the 
+account service under port 4444.
