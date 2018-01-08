@@ -15,13 +15,11 @@
 
 ![WebServiceRunning_RegistrationServerLog](images/3_webServerRegistered_LogRegistrationServer.png)
 <center>Image 4. Web service is registered in Registration Server</center>
-<br>
 
 * The service registration service has the two microservices registered
 
 ![RegistrationServerDashboard](images/4_webServiceRegisteredInEureka.png)
 <center>Image 5. Registration Server Dashboard</center>
-<br>
 
 * A second account microservice is running in the port 4444 and it is registered
 
@@ -33,7 +31,6 @@
 
 ![RegistrationServerDashboardWithAnotherAccountService](images/7_anotherAccountServiceRegisteredInEureka.png)
 <center>Image 8. Registration Server Dashboard with another Account Service added</center>
-<br>
 
 * A brief report describing what happens when you kill the microservice with port 2222. Can the web service provide information about the accounts? Why?
 
